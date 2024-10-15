@@ -1,2 +1,54 @@
 # Shell-scripting-day1
 7 days shell scripting challenge
+#make directory
+ubuntu@ip-172-31-37-71:~$ mkdir day08
+change directory
+ubuntu@ip-172-31-37-71:~$ cd day08
+ubuntu@ip-172-31-37-71:~/day08$ vim shell_scripting.sh
+ubuntu@ip-172-31-37-71:~/day08$ chmod +x shell_scripting.sh
+ubuntu@ip-172-31-37-71:~/day08$ ./shell_scripting.sh
+My name is Deepika
+7 days of shellscripting challenge
+Tue Oct 15 00:11:32 UTC 2024
+ubuntu@ip-172-31-37-71:~/day08$ cat shell_scripting.sh
+#!/bin/bash
+<<comment
+This is about Me
+comment
+echo "My name is Deepika"
+echo "7 days of shellscripting challenge"
+echo "$(date)"
+
+ubuntu@ip-172-31-37-71:~/day08$ vim task3.sh
+ubuntu@ip-172-31-37-71:~/day08$ chmod +x task3.sh
+ubuntu@ip-172-31-37-71:~/day08$ ./task3.sh
+My name is Deepika and i started my 90daysof devops
+ubuntu@ip-172-31-37-71:~/day08$ cat task3.sh
+#!/bin/bash
+name="Deepika"
+course="90daysof devops"
+echo "My name is $name and i started my $course"
+
+ubuntu@ip-172-31-37-71:~/day08$ vim task4.sh
+ubuntu@ip-172-31-37-71:~/day08$ chmod +x task4.sh
+ubuntu@ip-172-31-37-71:~/day08$ ./task4.sh
+Current user : ubuntu
+home directory : /home/ubuntu
+current shell :/bin/bash
+
+ubuntu@ip-172-31-37-71:~/day08$ cat task4.sh
+#!/bin/bash
+echo "Current user : $USER"
+echo "home directory : $HOME"
+echo "current shell :$SHELL"
+
+ubuntu@ip-172-31-37-71:~/day08$ vim task5.sh
+ubuntu@ip-172-31-37-71:~/day08$ ./task5.sh
+listing all .txt files in the current directory :
+shell_scripting.sh  task3.sh  task4.sh  task5.sh
+
+ubuntu@ip-172-31-37-71:~/day08$ cat task5.sh
+#!/bin/bash
+echo "listing all .txt files in the current directory :"
+ls *.sh
+ubuntu@ip-172-31-37-71:~/day08$
